@@ -16,7 +16,7 @@ let package = Package(
 		.library(name: "OpenAIRealtime", type: .static, targets: ["OpenAIRealtime"]),
 	],
 	dependencies: [
-		.package(url: "https://github.com/stasel/WebRTC.git", branch: "latest"),
+		.package(url: "https://github.com/stasel/WebRTC.git", .upToNextMajor(from: "136.0.0")),
 	],
 	targets: [
 		.target(name: "OpenAIRealtime", dependencies: ["WebRTC"], path: "./src"),
